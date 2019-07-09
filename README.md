@@ -32,4 +32,7 @@ This website is about a Japanese manga *One Piece*, and it is **not yet complete
 
 ## Installing：
 
-```shel
+```shell  
+$ git clone https://github.com/sm450203924/one-piece-angular8.0.git
+```  
+<br>
