@@ -15,11 +15,15 @@ This website is about a Japanese manga *One Piece*, and it is **not yet complete
 ## Screenshots
 
 - In Mobile
-![image](https://github.com/sm450203924/one-piece-angular8/raw/master/screenshots/search-cast.gif)
+### - search cast ###
+![image](https://github.com/sm450203924/one-piece-angular8.0/raw/master/screenshots/search-cast.gif)
 <br>
-![image](https://github.com/sm450203924/one-piece-angular8/raw/master/screenshots/edit-cast.gif)
+### - edit cast ###
+![image](https://github.com/sm450203924/one-piece-angular8.0/raw/master/screenshots/edit-cast.gif)
 <br>
-![image](https://github.com/sm450203924/one-piece-angular8/raw/master/screenshots/add-delete-cast.gif)
+### - add & delete cast ###
+![image](https://github.com/sm450203924/one-piece-angular8.0/raw/master/screenshots/add-delete-cast.gif)
+<br>
 
 ## Compatibility
 - Chrome, Firefox, Opera, Safari, IE9+
@@ -28,7 +32,4 @@ This website is about a Japanese manga *One Piece*, and it is **not yet complete
 
 ## Installing：
 
-```shell  
-$ git clone https://github.com/sm450203924/one-piece-angular8.git
-```  
-<br>
+```shel
