@@ -1,0 +1,38 @@
+body{
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1,h2,h3{
+  text-align: center;
+}
+
+p{
+  line-height: 1.5;
+}
+
+hr{
+  border-top: 1px solid rgba(188, 188, 188, 0.5);
+}
+
+button#toTopBtn{
+  width:4em;
+  height:6em;
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+  border: none;
+  border-radius: 0.5em;
+  position: fixed;
+  right:3em;
+  bottom: 6em;
+  i{
+    font-size:2em;
+  }
+  svg{
+    font-size:2em;
+  }
+}

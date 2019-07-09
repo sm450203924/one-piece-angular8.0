@@ -1,0 +1,63 @@
+.cast-detail-content{
+  font-size: 14px;
+  >section{
+    background-color: rgba(255,255,255,.8);
+    padding: 1em 8%;
+  }
+  h3 {
+    font-family: "neo-latina";
+    font-size: 1.8em;
+    font-weight:500;
+    text-align: center;
+  }
+
+  .personal-pic{
+    >div{
+      height:6em;
+      width:6em;
+      max-width: 100%;
+      max-height: 100%;
+      margin:0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      border: 5px inset;
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .personal-profile{
+    .profile-text{
+      background-color: #fff;
+      border:0.5em solid #E7E7E7;
+      border-left-width: 1em;
+      margin-top:1em;
+      p{
+        word-wrap:break-word;
+        word-break:normal;
+        button{
+          float:right;
+        }
+      }
+    }
+  }
+
+  $cast-color-list: rgba(184,0,0,0.5),rgba(15,157,0,0.5),rgba(255,200,0,0.5),rgba(184,106,0,0.5),rgba(3,0,165,0.5),rgba(111,0,0,0.5),rgba(255,150,255,0.5),rgba(0,158,215,0.5),rgba(0,50,67,0.5);
+
+  @for $i from 1 through 9 {
+    #cast-#{$i}{
+      .personal-pic{
+        >div{
+          border-color:nth($cast-color-list,$i);
+        }
+      }
+      .profile-text{
+        border-left-color: nth($cast-color-list,$i);
+      }
+    }
+  }
+}
+

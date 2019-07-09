@@ -1,0 +1,19 @@
+<div class="cast-detail-content">
+
+  <button (click)="goBack()" class="btn btn-light"><mat-icon>arrow_back</mat-icon></button><span>DETAIL</span>
+
+    <section class="personal-profile row" id="cast-{{cast.id}}" *ngIf="cast">
+      <div class="col-md-3 personal-pic">
+        <div [ngStyle]="{'background-image': cast.picUrl!=null?  'url('+cast.picUrl+')': 'url(http://news.cableabc.com/ccqi/userfiles/images/20140227084432846.jpg)'}"></div>
+      </div>
+      <div class="col-md-9 col-lg-6 profile-text">
+        <h3>{{cast.name}}</h3>
+        <p>
+          {{cast.profile}}
+          <button routerLink="edit/" class="btn"><mat-icon>edit</mat-icon></button>
+        </p>
+      </div>
+    </section>
+
+</div>
+

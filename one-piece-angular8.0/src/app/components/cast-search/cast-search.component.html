@@ -1,0 +1,15 @@
+<div class="cast-search-session">
+  <mat-form-field>
+    <input matInput #castSearchBox id="search-box" (input)="search(castSearchBox.value)" placeholder="Enter the cast"/>
+    <button mat-button *ngIf="castSearchBox.value" matSuffix mat-icon-button aria-label="Clear" (click)="castSearchBox.value=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <ul class="search-result">
+    <li *ngFor="let cast of casts$ | async" >
+      <a routerLink="/cast/{{cast.id}}">
+        {{cast.name}}
+      </a>
+    </li>
+  </ul>
+</div>

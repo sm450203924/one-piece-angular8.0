@@ -1,0 +1,25 @@
+<div class="plot-edit-content">
+  <button (click)="goBack()" class="btn"><mat-icon>arrow_back</mat-icon></button><span>EDIT</span>
+
+  <section>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Plot Title</mat-label>
+        <input #plotTitle matInput placeholder="title">
+        <mat-icon matSuffix>title</mat-icon>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Plot Content</mat-label>
+        <textarea #plotContent matInput placeholder="content"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="save-btn">
+      <button (click)="add(plotTitle.value, plotContent.value)" class="btn btn-dark">
+        ADD
+      </button>
+    </div>
+  </section>
+</div>
+

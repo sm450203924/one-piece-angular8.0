@@ -1,0 +1,28 @@
+.plot-edit-content{
+  font-size:14px;
+  section{
+    >div{
+      margin-top: 10px;
+      padding: 15px 5% 0 5%;
+      &:not(:last-of-type){
+        background-color: rgba(255,255,255,.8);
+      }
+      textarea{
+        height:15em;
+        resize: none;
+        overflow: scroll;
+      }
+    }
+  }
+
+  .mat-form-field{
+    width:100%;
+  }
+
+  .save-btn{
+    >button{
+      width:100%;
+      margin:0 auto;
+    }
+  }
+}

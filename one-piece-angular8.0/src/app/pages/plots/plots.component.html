@@ -1,0 +1,26 @@
+<article class="content container plot-content">
+  <div class="plot">
+    <div class="heading">
+      <h1>Plot</h1>
+      <div class="agileits-line"></div>
+      <button title="add plot" class="btn btn-light" routerLink="./add">
+      <!--<button title="add plot" class="btn btn-light" (click)="openDialog()">-->
+      <!--<button title="add plot" class="btn btn-light">-->
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+    <div class="timeline container">
+      <section *ngFor="let plot of plots">
+        <button title="delete plot" class="btn"
+                (click)="delete(plot)">
+          <mat-icon>close</mat-icon>
+        </button>
+        <div>
+          <h2 routerLink="./{{plot.id}}">{{plot.title}}</h2>
+          <p>{{plot.content}}</p>
+        </div>
+      </section>
+      <!--from The above text comes from:http://onepiece.wikia.com/wiki/One_Piece_(Manga)-->
+    </div>
+  </div>
+</article>

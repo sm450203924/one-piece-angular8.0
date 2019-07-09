@@ -1,0 +1,23 @@
+<article class="content container video-content">
+  <div class="video" *ngIf="videos">
+    <div class="heading">
+      <h1>Video</h1>
+      <div class="agileits-line"></div>
+    </div>
+    <div class="series container" id="video_container">
+      <section *ngFor="let videoItem of videos">
+        <h2><span></span>{{videoItem.topic}}</h2>
+        <div class="row">
+          <div *ngFor="let vid of videoItem.video" class="col-md-4">
+            <div class="vid-wrap" title="{{vid.title}}">
+              <div class="vid youtube" (click)="zoomInWin($event)" style="background-image: url(https://i.ytimg.com/vi/{{vid.videoId}}/mqdefault.jpg)"></div>
+              <h3>{{vid.title}}</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </section>
+    </div>
+  </div>
+  <!-- all above video from youtube-->
+</article>

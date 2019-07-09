@@ -1,0 +1,13 @@
+.plot-add-dialog-content{
+ font-size:16px;
+  .cdk-overlay-pane{
+    width:80% !important;
+  }
+  .mat-form-field{
+    width:100%;
+  }
+  .mat-dialog-actions{
+    display:flex;
+    justify-content: space-between;
+  }
+}

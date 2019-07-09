@@ -1,0 +1,38 @@
+<!--<mat-grid-list cols="1" rowHeight="3:1" routerLink="/detail/{{cast.id}}" id="cast-{{cast.id}}" class="casts">-->
+<div class="casts-content">
+  <app-cast-search></app-cast-search>
+  <section
+    *ngFor="let cast of casts"
+    id="cast-{{cast.id}}" class="cast-list row">
+    <div class="personal-pic col-3" routerLink="/cast/{{cast.id}}">
+      <div [ngStyle]="{'background-image': cast.picUrl!=null?  'url('+cast.picUrl+')': 'url(http://news.cableabc.com/ccqi/userfiles/images/20140227084432846.jpg)'}"></div>
+    </div>
+    <div class="profile-text col-7">
+      <h3>{{cast.name}}</h3>
+      <p>{{cast.profile}}</p>
+    </div>
+    <!--<div class="delete-cast-btn">-->
+    <button title="delete cast" class="btn col-2"
+            (click)="delete(cast)">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <!--</div>-->
+
+  </section>
+
+  <section class="add-cast-form row">
+    <div class="col-9">
+      <input matInput #castName placeholder="Add A Cast" class="form-control"/>
+      <button mat-button *ngIf="castName.value" matSuffix mat-icon-button aria-label="Clear" (click)="castName.value=''" class="clear-input">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <div class="col-3 add-cast-btn-wrap">
+      <button (click)="add(castName.value); castName.value=''" class="btn btn-light">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+
+  </section>
+</div>
+

@@ -1,0 +1,53 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 300px;
+  box-shadow: 4px 0 5px rgba(0,0,0,.3);
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+.mat-drawer {
+  background-color: rgba(0,0,0,.5);
+}
+
+.mat-list-base .mat-list-item{
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mat-form-field.mat-focused .mat-form-field-label{
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.bar-logo{
+  text-align: center;
+  width:100%;
+  img{
+    height: 40px;
+    margin:0 auto;
+  }
+  .mat-icon-button{
+    position: absolute;
+    left:10px;
+  }
+}
+
+.mat-nav-list .mat-list-item{
+  font-size: 16px;
+  height:4em;
+}
+
+.mat-toolbar.mat-primary {
+  background: #fff;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button {
+  color: #424242;
+}

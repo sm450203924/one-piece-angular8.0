@@ -1,0 +1,30 @@
+<div class="cast-edit-content">
+  <button (click)="goBack()" class="btn"><mat-icon>arrow_back</mat-icon></button><span>EDIT</span>
+
+  <section *ngIf="cast">
+    <div class="personal-pic">
+      <div [ngStyle]="{'background-image': cast.picUrl!=null?  'url('+cast.picUrl+')': 'url(http://news.cableabc.com/ccqi/userfiles/images/20140227084432846.jpg)'}">
+        <div class="edit-mask">edit</div>
+      </div>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Cast Name</mat-label>
+        <input matInput [(ngModel)]="cast.name" placeholder="name">
+        <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Cast Profile</mat-label>
+        <textarea matInput [(ngModel)]="cast.profile" placeholder="profile">{{cast.profile}}</textarea>
+      </mat-form-field>
+    </div>
+    <div class="save-btn">
+      <button (click)="save()" class="btn btn-dark">
+        save
+      </button>
+    </div>
+  </section>
+</div>
+
